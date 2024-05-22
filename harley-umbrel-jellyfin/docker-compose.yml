@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: harley-umbrel-jellyfin_server_1
+      APP_PORT: 8096
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: linuxserver/jellyfin:10.9.2
+    restart: on-failure
+    hostname: "${DEVICE_HOSTNAME}"
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${APP_DATA_DIR}/data/movies:/movies
+      - ${APP_DATA_DIR}/data/tv_shows:/tv_shows
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+    ports:
+      # Service auto-discovery
+      - 7360:7359/udp

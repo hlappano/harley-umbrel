@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: harley-umbrel-tinymediamanager_server_1
+      APP_PORT: 4000
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: tinymediamanager/tinymediamanager:5.0.5
+    restart: unless-stopped
+    hostname: "${DEVICE_HOSTNAME}"
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+      - ${APP_DATA_DIR}/data/movies:/media/movies
+      - ${APP_DATA_DIR}/data/tv_shows:/media/tv_shows
+    ports:
+      # VNC Port
+      - 5900:5900

@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: harley-umbrel-tinymediamanager
+category: media
+name: Tiny Media Manager
+version: "5.0.5"
+tagline: The Free Software Media System
+icon: https://raw.githubusercontent.com/hlappano/harley-umbrel/master/harley-umbrel-tinymediamanager/data/tmm_logo.svg
+description: >-
+  Tiny Media Manager is a full featured media manager to organize and clean up your media library.
+
+  It is designed to allow you to create/view/edit the metadata, artwork and file structure for your media files used by Kodi (formerly XBMC), Plex, MediaPortal, Emby, Jellyfin and other compatible media center software.
+
+  As a Java application it is truly cross-platform and will run on Windows, Linux and MacOS (and possibly more).
+developer: tinymediamanager
+website: https://www.tinymediamanager.org
+dependencies: []
+repo: https://gitlab.com/tinyMediaManager/tinyMediaManager
+support: https://www.tinymediamanager.org/help/
+port: 8098
+gallery:
+  - https://www.tinymediamanager.org/images/screenshots/thumbs/v5/movies/movies01-thumb.png
+  - https://www.tinymediamanager.org/images/screenshots/v5/movies/movies02.png
+  - https://www.tinymediamanager.org/images/screenshots/v5/tvshows/tvshows02.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  Full release notes can be found here: https://gitlab.com/tinyMediaManager/tinyMediaManager/-/releases
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: Harley
+submission:
