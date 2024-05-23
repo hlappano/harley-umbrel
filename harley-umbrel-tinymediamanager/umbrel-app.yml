@@ -4,7 +4,7 @@ category: media
 name: Tiny Media Manager
 version: "5.0.5"
 tagline: The Free Software Media System
-icon: https://raw.githubusercontent.com/hlappano/harley-umbrel/master/harley-umbrel-tinymediamanager/data/tmm_logo.svg
+icon: https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/tinymediamanager/tmm_logo.svg
 description: >-
   Tiny Media Manager is a full featured media manager to organize and clean up your media library.
 

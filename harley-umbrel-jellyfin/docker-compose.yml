@@ -18,6 +18,8 @@ services:
       - ${APP_DATA_DIR}/data/config:/config
       - ${APP_DATA_DIR}/data/movies:/movies
       - ${APP_DATA_DIR}/data/tv_shows:/tv_shows
+      - ${APP_DATA_DIR}/data/music:/music
+      - ${APP_DATA_DIR}/data/books:/books
       - ${UMBREL_ROOT}/data/storage/downloads:/downloads
     ports:
       # Service auto-discovery

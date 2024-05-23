@@ -26,9 +26,9 @@ repo: https://github.com/jellyfin/jellyfin
 support: https://github.com/jellyfin/jellyfin/issues
 port: 8097
 gallery:
-  - https://jellyfin.org/assets/images/10.8-home-4a73a92bf90d1eeffa5081201ca9c7bb.png
-  - https://jellyfin.org/assets/images/10.8-library-9c07ba46877a03e749c0c8b5ed157e53.png
-  - https://jellyfin.org/assets/images/10.8-details-df4f7caaee389ffbaeeaa95b668fa037.png
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/jellyfin/image_1.png
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/jellyfin/image_2.png
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/jellyfin/image_3.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
