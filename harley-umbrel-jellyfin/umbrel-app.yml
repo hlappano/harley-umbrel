@@ -2,7 +2,7 @@ manifestVersion: 1
 id: harley-umbrel-jellyfin
 category: media
 name: Jellyfin
-version: "10.9.3"
+version: "10.9.6"
 tagline: The Free Software Media System
 icon: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-dev.svg
 description: >-
@@ -33,7 +33,7 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  We are pleased to announce the latest stable release of Jellyfin, version 10.9.3!
+  We are pleased to announce the latest stable release of Jellyfin, version 10.9.6!
 
 
   This minor release brings several bugfixes to improve your Jellyfin experience.
@@ -45,27 +45,12 @@ releaseNotes: >-
   You can find more details about and discuss this release on our forums.
 
 
-  - Changelog (19)
+  - Changelog (4)
     - 📈 General Changes:
-      -  Extract media attachment one by one if the filename appears to be a path [PR #11812], by @gnattu
-      -  Filter invalid IPs on external interface matching [PR #11766], by @gnattu
-      -  Use SharedStream for LiveTV more restrictively [PR #11805], by @gnattu
-      -  Fix the IOSurf error in QSV transcoding [PR #11830], by @nyanmisaka
-      -  Improve reliability of HasChanged check [PR #11792], by @Shadowghost
-      -  Trickplay: kill ffmpeg when task is cancelled [PR #11790], by @NotSaifA
-      -  Force more compatible transcoding profile for LiveTV [PR #11801], by @gnattu
-      -  Exclude virtual items from DateLastMediaAdded calculation [PR #11804], by @Shadowghost
-      -  Add Canceled to ended state [PR #11808], by @Shadowghost
-      -  Recalculate trickplay image height for anamorphic videos [PR #11798], by @gnattu
-      -  Fix BD/DVD folder chapter image extraction [PR #11754], by @Shadowghost
-      -  Mark SearchHint.MatchedTerm as nullable [PR #11802], by @crobibero
-      -  Disable VA-VK interop on not supported kernel versions [PR #11799], by @nyanmisaka
-      -  Retain order blu-ray segments [PR #11781], by @Bond-009
-      -  Override too small trickplay image interval [PR #11788], by @gnattu
-      -  Apply audio boost when downmixing regardless of downmixalgo [PR #11774], by @Bond-009
-      -  Fix VideoToolbox H264 constrained profile option [PR #11713], by @gnattu
-      -  Do not run trickplay on scan if disabled [PR #11739], by @Shadowghost
-      -  Don't require user when getting current session [PR #11738], by @crobibero
+      - Fix fallback artist when taglib fails [PR #11989], by @gnattu
+      - Do not stop validation if folder was removed [PR #11959], by @Shadowghost
+      - Use only 1 write connection/DB [PR #11986], by @Bond-009
+      - Set ProductionLocations instead of Tags [PR #11984], by @Shadowghost
 
 
   Full release notes can be found here: https://github.com/jellyfin/jellyfin/releases
