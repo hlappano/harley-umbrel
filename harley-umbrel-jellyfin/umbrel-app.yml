@@ -2,7 +2,7 @@ manifestVersion: 1
 id: harley-umbrel-jellyfin
 category: media
 name: Jellyfin
-version: "10.9.6"
+version: "10.9.9"
 tagline: The Free Software Media System
 icon: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-dev.svg
 description: >-
@@ -33,7 +33,7 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  We are pleased to announce the latest stable release of Jellyfin, version 10.9.6!
+  We are pleased to announce the latest stable release of Jellyfin, version 10.9.9!
 
 
   This minor release brings several bugfixes to improve your Jellyfin experience.
@@ -45,12 +45,11 @@ releaseNotes: >-
   You can find more details about and discuss this release on our forums.
 
 
-  - Changelog (4)
+  - Changelog (3)
     - 📈 General Changes:
-      - Fix fallback artist when taglib fails [PR #11989], by @gnattu
-      - Do not stop validation if folder was removed [PR #11959], by @Shadowghost
-      - Use only 1 write connection/DB [PR #11986], by @Bond-009
-      - Set ProductionLocations instead of Tags [PR #11984], by @Shadowghost
+      - Fix creating virtual seasons (again) [PR #12356], by @nielsvanvelzen
+      - Update Serilog deps [PR #12368], by @Bond-009
+      - Implement Device Cache to replace EFCoreSecondLevelCacheInterceptor [PR #11901], by @gnattu
 
 
   Full release notes can be found here: https://github.com/jellyfin/jellyfin/releases
