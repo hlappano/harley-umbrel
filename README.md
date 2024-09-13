@@ -6,7 +6,7 @@ This repository came from a template created from Umbrel Community App Store. Th
 ## Apps
 | App Name                                               | Version | Port | Notes                   |
 | ------------------------------------------------------ | ------- | ---- | ----------------------- |
-| [Jellyfin](https://jellyfin.org/)                      | 10.9.9  | 8097 | Changed the port number it doesn't interfere with Umbrel's Apps. |
+| [Jellyfin](https://jellyfin.org/)                      | 10.9.11  | 8097 | Changed the port number it doesn't interfere with Umbrel's Apps. |
 | [Tiny Media Manager](https://www.tinymediamanager.org) | 5.0.5   | 8098 | Runs application within VNC viewer |
 
 ## How to use:
