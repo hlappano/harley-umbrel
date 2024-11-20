@@ -2,7 +2,7 @@ manifestVersion: 1
 id: harley-umbrel-jellyfin
 category: media
 name: Jellyfin
-version: "10.9.11"
+version: "10.10.3"
 tagline: The Free Software Media System
 icon: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-dev.svg
 description: >-
@@ -33,7 +33,7 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  We are pleased to announce the latest stable release of Jellyfin, version 10.9.11!
+  We are pleased to announce the latest stable release of Jellyfin, version 10.10.3!
 
 
   This minor release brings several bugfixes to improve your Jellyfin experience.
@@ -45,14 +45,9 @@ releaseNotes: >-
   You can find more details about and discuss this release on our forums.
 
 
-  - Changelog (6)
+  - Changelog (X)
     - 📈 General Changes:
-      - Fix subtitle and attachment extraction when input path contains quotes [PR #12575], by @dmitrylyzo
-      - Use filtered codecs to build appliedConditions [PR #12562], by @nyanmisaka
-      - Fix alt version name generation [PR #12558], by @Bond-009
-      - Create and use FormattingStreamWriter [PR #12550], by @Bond-009
-      - Fix CodecProfiles and video encoder profiles [PR #12521], by @nyanmisaka
-      - Don't apply chapter image settings to music [PR #12531], by @gnattu
+      - Wraps up 10.10.1, 10.10.2, and 10.10.3
 
   Full release notes can be found here: https://github.com/jellyfin/jellyfin/releases
 torOnly: false
