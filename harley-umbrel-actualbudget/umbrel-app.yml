@@ -1,0 +1,39 @@
+manifestVersion: 1
+id: harley-umbrel-actualbudget
+category: finance
+name: Actual Budget
+version: "25.1.0"
+tagline: A Free Open Source Local-First Personal Finance Tool
+icon: https://raw.githubusercontent.com/actualbudget/docs/master/static/img/favicon.png
+description: >-
+  Actual Budget is a super fast and privacy-focused app for managing your finances
+
+  At its heart is the well proven and much loved Envelope Budgeting methodology.
+
+  You own your data and can do whatever you want with it.
+
+  Featuring multi-device sync, optional end-to-end encryption and so much more.
+developer: Actual
+website: https://actualbudget.org
+dependencies: []
+repo: https://github.com/actualbudget/actual-server
+support:
+port: 8099
+gallery:
+  - https://actualbudget.org/img/homepage/actual-main-budget.png
+  - https://actualbudget.org/img/homepage/actual-main-transaction.png
+  - https://actualbudget.org/img/homepage/actual-report-cash-flow.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  Stable latest release of Actual Budget
+
+  - Changelog (X)
+    - Remove used release notes
+    - Update web package
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: Harley
+submission:
