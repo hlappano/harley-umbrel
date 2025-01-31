@@ -1,0 +1,27 @@
+manifestVersion: 1
+id: harley-umbrel-opentts
+category: ai
+name: Open TTS
+version: "2.1"
+tagline: Unifies access to multiple open source text to speech systems and voices for many languages. 
+icon: https://raw.githubusercontent.com/synesthesiam/opentts/refs/heads/master/img/terminal.svg
+description: >-
+ A fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4.
+developer: synesthesiam
+website: https://github.com/synesthesiam
+dependencies: []
+repo: https://github.com/synesthesiam/opentts
+support: https://github.com/synesthesiam/opentts/issues
+port: 8100
+gallery:
+  - https://raw.githubusercontent.com/synesthesiam/opentts/master/img/screenshot.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  Release 2.1
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: Harley
+submission:
