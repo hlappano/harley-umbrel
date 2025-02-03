@@ -5,7 +5,6 @@ services:
       APP_HOST: harley-umbrel-mimic3_server_1
       APP_PORT: 59125
       PROXY_AUTH_ADD: 'true'
-    container_name: harley-umbrel-mimic3_app_proxy_1
   server:
     image: mycroftai/mimic3:0.2.4
     restart: on-failure

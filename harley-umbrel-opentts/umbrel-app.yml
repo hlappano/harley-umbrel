@@ -6,7 +6,11 @@ version: "2.1"
 tagline: Unifies access to multiple open source text to speech systems and voices for many languages. 
 icon: https://raw.githubusercontent.com/synesthesiam/opentts/refs/heads/master/img/terminal.svg
 description: >-
- A fast, local neural text to speech system that sounds great and is optimized for the Raspberry Pi 4.
+ Open TTS developed by synesthesiam unifies multiple open source tts systems via one web interface.
+
+ An english image of Open TTS version 2.1.
+
+ Some voices can be a resource hog, so just be aware and use as an experimental.
 developer: synesthesiam
 website: https://github.com/synesthesiam
 dependencies: []
