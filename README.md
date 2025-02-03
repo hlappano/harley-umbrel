@@ -9,7 +9,8 @@ This repository came from a template created from Umbrel Community App Store. Th
 | [Jellyfin](https://jellyfin.org/)                      | 10.10.5 | 8097  | Changed the port number it doesn't interfere with Umbrel's Apps. |
 | [Tiny Media Manager](https://www.tinymediamanager.org) | 5.0.5   | 8098  | Runs application within VNC viewer |
 | [Actual Budget](https://actualbudget.org/)             | 25.1.1  | 8099  | None                    |
-| [Open TTS](https://github.com/synesthesiam/opentts)    | 2.1     | 8100  | Please go to [App.py Source](https://github.com/synesthesiam/opentts/blob/master/app.py) and review the paremeters.You can modify the docker-compose.yml and add the arguments e.g. command: ["--no-espeak"] |
+| [Open TTS](https://github.com/synesthesiam/opentts)    | 2.1     | 8100  | Some voices can be a resource hog with the RAM, so unfortunately, this doesn't work well with 8GB. For additional custom parameters, [App.py Source](https://github.com/synesthesiam/opentts/blob/master/app.py) and review the paremeters.You can modify the docker-compose.yml and add the arguments e.g. command: ["--no-espeak"] |
+| [Mimic 3 TTS](https://github.com/MycroftAI/mimic3)         | 0.0.4   | 8101  | Need to download voices and manually install them under /data/voices. [Hugging Face mukowaty Mimic 3 Voices](https://huggingface.co/mukowaty/mimic3-voices). I believe the original mimic3 voices issue is either that the voices are missing because they are LFS files, or the calling to download is incorrect.|
 
 ## How to use:
 https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4

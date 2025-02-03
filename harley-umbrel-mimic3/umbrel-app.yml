@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: harley-umbrel-mimic3
+category: ai
+name: Mimic 3
+version: "0.0.4"
+tagline: A neural text to speech engine 
+icon: https://raw.githubusercontent.com/MycroftAI/mimic3/refs/heads/master/img/Mimic_color.svg
+description: >-
+  Mimic 3 is a neural text to speech engine that can run locally, even on low-end hardware like the Raspberry Pi 4. 
+  
+  It is the default text to speech engine on the Mark II.
+developer: Mycroft AI
+website: https://github.com/mycroftai
+dependencies: []
+repo: https://github.com/MycroftAI/mimic3
+support: https://github.com/MycroftAI/mimic3/issues
+port: 8101
+gallery:
+  - https://raw.githubusercontent.com/MycroftAI/mimic3/master/img/mimic3-hero.jpg
+  - https://raw.githubusercontent.com/MycroftAI/mimic3/master/img/server_screenshot.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: >-
+  Release 0.0.4
+torOnly: false
+permissions:
+  - STORAGE_DOWNLOADS
+submitter: Harley
+submission:
