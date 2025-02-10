@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: harley-umbrel-piper-hub
+name: Piper Hub
+tagline: A neural text to speech engine web portal
+icon: https://raw.githubusercontent.com/hlappano/Piper-Hub/refs/heads/main/static/imgs/piper_web_logo.png
+category: ai
+version: "0.0.1"
+port: 8102
+description: >-
+  This is a web interface portal to the Piper TTS.
+developer: HLappano
+website: https://github.com/hlappano
+submitter: Harley
+submission:
+repo: https://github.com/hlappano/Piper-Hub
+support: https://github.com/hlappano/Piper-Hub/issues
+gallery:
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/piper-hub/image_1.png
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/piper-hub/image_2.png
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/piper-hub/image_3.png
+releaseNotes: >-
+  Release 0.0.1
+
+  No pre-built image, docker will build image from scratch.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
