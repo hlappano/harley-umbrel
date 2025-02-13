@@ -4,7 +4,7 @@ name: Piper Hub
 tagline: A neural text to speech engine web portal
 icon: https://raw.githubusercontent.com/hlappano/Piper-Hub/refs/heads/main/static/imgs/piper_web_logo.png
 category: ai
-version: "0.0.1"
+version: "1.0.1"
 port: 8102
 description: >-
   This is a web interface portal to the Piper TTS.
@@ -19,9 +19,9 @@ gallery:
   - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/piper-hub/image_2.png
   - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/piper-hub/image_3.png
 releaseNotes: >-
-  Release 0.0.1
+  Release 1.0.1
 
-  No pre-built image, docker will build image from scratch.
+  Official release of Piper Hub version 1.0.1 with docker image. Updates to tables and UI.
 dependencies: []
 path: ""
 defaultUsername: ""
