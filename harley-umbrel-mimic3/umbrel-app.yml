@@ -9,6 +9,9 @@ description: >-
   Mimic 3 is a neural text to speech engine that can run locally, even on low-end hardware like the Raspberry Pi 4. 
   
   It is the default text to speech engine on the Mark II.
+
+  Modified for Umbrel by Harley:
+  + Added patch for download voices to huggingface url.
 developer: Mycroft AI
 website: https://github.com/mycroftai
 dependencies: []

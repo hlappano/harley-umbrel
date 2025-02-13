@@ -14,7 +14,8 @@ services:
       - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data:/home/mimic3/.local/share/mycroft/mimic3
-      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+      - ${APP_DATA_DIR}/download.py:/home/mimic3/app/mimic3_tts/download.py
+      - ${APP_DATA_DIR}/const.py:/home/mimic3/app/mimic3_tts/const.py
     ports:
       - 59125:59125/udp
     tty: true
