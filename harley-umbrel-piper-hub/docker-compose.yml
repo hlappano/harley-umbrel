@@ -7,7 +7,7 @@ services:
       APP_PORT: 5000
       PROXY_AUTH_ADD: 'true'
   server:
-    image: hlappano/piper-hub:v1.0.1
+    image: hlappano/piper-hub:v1.1.0
     hostname: ${DEVICE_HOSTNAME}
     environment:
       - PUID=1000

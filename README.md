@@ -11,7 +11,7 @@ This repository came from a template created from Umbrel Community App Store. Th
 | [Actual Budget](https://actualbudget.org/)             | 25.2.1  | 8099  | None                    |
 | [Open TTS](https://github.com/synesthesiam/opentts)    | 2.1     | 8100  | Some voices can be a resource hog with the RAM, so unfortunately, this doesn't work well with 8GB. For additional custom parameters, [App.py Source](https://github.com/synesthesiam/opentts/blob/master/app.py) and review the paremeters.You can modify the docker-compose.yml and add the arguments e.g. command: ["--no-espeak"] |
 | [Mimic 3 TTS](https://github.com/MycroftAI/mimic3)     | 0.0.4   | 8101  | Added patch files in volume mount to fix the download voices |
-| [Piper Hub](https://github.com/hlappano/Piper-Hub)     | 1.0.1  | 8102 | None                      |
+| [Piper Hub](https://github.com/hlappano/Piper-Hub)     | 1.1.0  | 8102 | None                      |
 
 ## How to use:
 https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
