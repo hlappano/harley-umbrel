@@ -11,7 +11,9 @@ description: >-
   It is the default text to speech engine on the Mark II.
 
   Modified for Umbrel by Harley:
-  + Added patch for download voices to huggingface url.
+  + Added patch for download voices from huggingface url instead of the default github.
+     - The github had LFS files, that were not being downloaded correctly.
+
 developer: Mycroft AI
 website: https://github.com/mycroftai
 dependencies: []

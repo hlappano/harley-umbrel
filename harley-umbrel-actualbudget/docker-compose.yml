@@ -5,10 +5,10 @@ services:
     environment:
       APP_HOST: harley-umbrel-actualbudget_server_1
       APP_PORT: 5006
-      PROXY_AUTH_ADD: "false"
+      PROXY_AUTH_ADD: "true"
 
   server:
-    image: actualbudget/actual-server:25.1.0
+    image: actualbudget/actual-server:25.2.1
     restart: unless-stopped
     hostname: "${DEVICE_HOSTNAME}"
     environment:
