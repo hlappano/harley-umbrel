@@ -2,7 +2,7 @@ manifestVersion: 1
 id: harley-umbrel-jellyfin
 category: media
 name: Jellyfin
-version: "10.10.5"
+version: "10.10.6"
 tagline: The Free Software Media System
 icon: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-dev.svg
 description: >-
@@ -33,7 +33,7 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  We are pleased to announce the latest stable release of Jellyfin, version 10.10.5!
+  We are pleased to announce the latest stable release of Jellyfin, version 10.10.6!
 
 
   This minor release brings several bugfixes to improve your Jellyfin experience.
@@ -44,18 +44,24 @@ releaseNotes: >-
 
   You can find more details about and discuss this release on our forums.
 
+  - Release Notes
+    - Crashes on Apple silicon [Issue #13379] should be fixed by the bump to .NET framework version 8.0.13 in this release
 
-  - Changelog (X)
+
+  - Changelog (12)
     - 📈 General Changes:
-      - Add check to prevent downgrade from future EFCore refactor [PR #13103], by @JPVenson
-      - Open files with FileShare.Read for BlurHash calculations [PR #13425], by @Bond-009
-      - Don't select audio stream and codec explicitly for copy when bitrate exceeds limit [PR #13423], by @gnattu
-      - Fix parallel use of not thread-safe SubtitleFormat instance [PR #13384], by @alltilla
-      - Use WriteThrough for ImageSaver [PR #13411], by @gnattu
-      - Catch IOExceptions for GetFileSystemMetadata [PR #13390], by @gnattu
-      - Fix rating levels [PR #13388], by @Shadowghost
-      - Fix: handling of elements in NfoParser [PR #13092], by @TheMelmacian
-      - Fix interface selection [PR #13382], by @Shadowghost
+      - Update dependency z440.atl.core to 6.16.0 [PR #13526], by @crobibero
+      - Fix subnet contains check [PR #13489], by @gnattu
+      - Fix image encoding concurrency limit [PR #13532], by @gnattu
+      - Fix SchedulesDirect image prefetching [PR #13469], by @Shadowghost
+      - Skip allowed tags check for parents of an item [PR #12721], by @elfalem
+      - Fix LiveTV Guide Backdrop image not updating [PR #13504], by @IDisposable
+      - Correctly handle audio number tag fallbacks [PR #13490], by @gnattu
+      - Allow api key to subscribe to admin websockets [PR #13499], by @crobibero
+      - Fix rating mistake in us.csv [PR #13487], by @Bond-009
+      - Fall back to calculating mime type from path when needed [PR #13439], by @Bond-009
+      - Fix interface ordering again [PR #13448], by @Shadowghost
+      - Fixed Websocket not locking state correctly [PR #13459], by @JPVenson
 
   Full release notes can be found here: https://github.com/jellyfin/jellyfin/releases
 torOnly: false
