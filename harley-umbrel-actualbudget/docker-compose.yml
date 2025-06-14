@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "true"
 
   server:
-    image: actualbudget/actual-server:25.5.0
+    image: actualbudget/actual-server:25.6.1
     hostname: "${DEVICE_HOSTNAME}"
     environment:
       - PUID=1000
