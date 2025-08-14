@@ -2,7 +2,7 @@ manifestVersion: 1
 id: harley-umbrel-actualbudget
 category: finance
 name: Actual Budget
-version: "25.7.1"
+version: "25.8.0"
 tagline: A Free Open Source Local-First Personal Finance Tool
 icon: https://raw.githubusercontent.com/actualbudget/docs/master/static/img/favicon.png
 description: >-
