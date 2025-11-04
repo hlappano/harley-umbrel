@@ -2,7 +2,7 @@ manifestVersion: 1
 id: harley-umbrel-jellyfin
 category: media
 name: Jellyfin
-version: "10.10.7"
+version: "10.11.2"
 tagline: The Free Software Media System
 icon: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-dev.svg
 description: >-
@@ -33,7 +33,11 @@ path: ""
 defaultUsername: ""
 defaultPassword: ""
 releaseNotes: >-
-  We are pleased to announce the latest stable release of Jellyfin, version 10.10.7!
+  IMPORTANT!!! - BEFORE UPDATING READ https://jellyfin.org/posts/jellyfin-release-10.11.0
+  
+  Major UPGRADE!
+
+  We are pleased to announce the latest stable release of Jellyfin, version 10.11.2!
 
 
   This minor release brings several bugfixes to improve your Jellyfin experience.
@@ -48,25 +52,16 @@ releaseNotes: >-
     - Configurations behind a reverse proxy that did not explicitly configure trusted proxies will not work after this release. This was never a supported configuration, so please ensure you correct your configuration before upgrading. See the updated docs here for more information.
   
 
+  For Update 2 in 10.11.2, please read releases of 10.11 since it is a major upgrade.
   - Changelog (12)
     - 🔒 Security
-      - Fix validation of API parameters to FFmpeg [GHSA-2c3c-r7gp-q32m], by @Shadowghost
-      - Fix trusting forward headers if none are configured [GHSA-qcmf-gmhm-rfv9], by @JPVenson
-      - Note: GHSAs will be published seven (7) days after this release.
+      - Update password reset to always return the same response structure [PR #15254], by @thornbill
     - 📈 General Changes:
-      - Fix regression where "Search for missing metadata" not handling cast having multiple roles [PR #13720], by @Lampan-git
-      - Clone fallback audio tags instead of use ATL.Track.set [PR #13694], by @gnattu
-      - Backport 10.11 API enum changes [PR #13835], by @nielsvanvelzen
-      - Support more rating formats [PR #13639], by @IDisposable
-      - Fix stackoverflow in MediaSourceCount [PR #12907], by @JPVenson
-      - Upgrade LrcParser to 2025.228.1 [PR #13659], by @congerh
-      - Include Role and SortOrder in MergePeople to fix "Search for missing metadata" [PR #13618], by @Lampan-git
-      - Delete children from cache on parent delete [PR #13601], by @Bond-009
-      - Fix overwrite of PremierDate with a year-only value [PR #13598], by @IDisposable
-      - Wait for ffmpeg to exit on Windows before we try deleting the concat file [PR #13593], by @Bond-009
-      - Fix 4K filtering when grouping movies into collections [PR #13594], by @theguymadmax
-      - Remove empty ParentIndexNumber workaround [PR #13611], by @Shadowghost
-      - Update dependency z440.atl.core to 6.20.0 [PR #13845], by @Shadowghost
+      - Fix legacy migration file checks [PR #15322], by @crobibero
+      - Update file size when refreshing metadata [PR #15325], by @vinnyspb
+      - Skip too large extracted season numbers [PR #15326], by @Shadowghost
+      - fix: in optimistic locking, key off table is locked [PR #15328], by @evanreichard
+      - Ignore initial delay in audio-only containers [PR #15247], by @nyanmisaka
 
   Full release notes can be found here: https://github.com/jellyfin/jellyfin/releases
 torOnly: false
