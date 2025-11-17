@@ -8,7 +8,7 @@ This repository came from a template created from Umbrel Community App Store. Th
 ## Apps
 | App Name                                               | Version | Port  | Notes                   |
 | ------------------------------------------------------ | ------- | ----- | ----------------------- |
-| [Jellyfin](https://jellyfin.org/)                      | 10.11.2 | 8097  | Changed the port number it doesn't interfere with Umbrel's Apps. |
+| [Jellyfin](https://jellyfin.org/)                      | 10.11.3 | 8097  | Changed the port number it doesn't interfere with Umbrel's Apps. |
 | [Tiny Media Manager](https://www.tinymediamanager.org) | 5.0.5   | 8098  | Runs application within VNC viewer |
 | [Actual Budget](https://actualbudget.org/)             | 25.11.0  | 8099  | None                    |
 | [Open TTS](https://github.com/synesthesiam/opentts)    | 2.1     | 8100  | Some voices can be a resource hog with the RAM, so unfortunately, this doesn't work well with 8GB. For additional custom parameters, [App.py Source](https://github.com/synesthesiam/opentts/blob/master/app.py) and review the paremeters.You can modify the docker-compose.yml and add the arguments e.g. command: ["--no-espeak"] |
