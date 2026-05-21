@@ -2,7 +2,7 @@ manifestVersion: 1
 id: harley-umbrel-jellyfin
 category: media
 name: Jellyfin
-version: "10.11.8"
+version: "10.11.9"
 tagline: The Free Software Media System
 icon: https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-dev.svg
 description: >-
@@ -37,7 +37,7 @@ releaseNotes: >-
   
   Major UPGRADE!
 
-  We are pleased to announce the latest stable release of Jellyfin, version 10.11.7!
+  We are pleased to announce the latest stable release of Jellyfin, version 10.11.9!
 
 
   This minor release brings several bugfixes to improve your Jellyfin experience.
@@ -52,11 +52,13 @@ releaseNotes: >-
     - Configurations behind a reverse proxy that did not explicitly configure trusted proxies will not work after this release. This was never a supported configuration, so please ensure you correct your configuration before upgrading. See the updated docs here for more information.
   
 
-  For 10.11.8, please read releases of 10.11 since it is a major upgrade.
-  - 📈 General Changes (3)
-    - Handle folders without associated library in FixLibrarySubtitleDownloadLanguages [PR #16540], by @Shadowghost
-    - Fix subtitle saving [PR #16539], by @MBR-0001
-    - Fix querying media with language filters [PR #16538], by @MBR-0001
+  For 10.11.9, please read releases of 10.11 since it is a major upgrade.
+  - 📈 General Changes (5)
+    - Fix rate control in av1_amf encoder [PR #16819], by @nyanmisaka
+    - Fix UserManager after EFcore refactor [PR #15368], by @JPVenson
+    - Update log for user session related concurrency update fails [PR #16845], by @JPVenson
+    - Allow HDR10 for VPP tonemapping [PR #16718], by @gnattu
+    - Use strict QSV CPB size for less powerful H.264 decoder [PR #16743], by @nyanmisaka
 
   Full release notes can be found here: https://github.com/jellyfin/jellyfin/releases
 torOnly: false
