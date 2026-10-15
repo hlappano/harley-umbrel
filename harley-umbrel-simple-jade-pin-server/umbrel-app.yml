@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: harley-umbrel-simple-jade-pin-server
+name: Simple Jade Pin server
+tagline: Blockstream Jade Pin Server (from local developers)
+icon: https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/icon.png
+category: bitcoin
+version: "1.0.1"
+port: 8107
+description: >-
+      A self-hosted blind PIN oracle for the Blockstream Jade, packaged as a desktop application that runs entirely offline.
+      Supports QR PIN Unlock, which makes it possible to use a Jade in a fully air-gapped way — no USB, no Bluetooth, no network.
+      USB and Bluetooth unlock via Blockstream Green are equally supported, including configuring the oracle over a USB cable when a camera is not an option.
+
+      NOTE: The camera media only works via https or a localhost. So a tunnel needs to be setup from camera device to umbrelos server.
+
+
+      Forked from SimpleJadePinServer by Filiprogrammer. The blind-oracle protocol implementation remains substantially theirs; this fork adds desktop packaging, offline hardening, camera fixes and key-management tooling. Not affiliated with or endorsed by Blockstream.
+developer: Filiprogrammer and boltadvantage
+website: https://github.com/boltadvantage/SimpleJadePinServer
+dependencies: []
+repo: https://github.com/boltadvantage/SimpleJadePinServer
+support: https://github.com/boltadvantage/SimpleJadePinServer
+gallery:
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_1.jpg
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_2.jpg
+releaseNotes: >-
+  Testing... Release 1.0.1
+path: ""
+defaultUsername: ""
+defaultPassword: ""

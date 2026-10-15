@@ -15,6 +15,7 @@ This repository came from a template created from Umbrel Community App Store. Th
 | [Mimic 3 TTS](https://github.com/MycroftAI/mimic3)     | 0.0.4   | 8101  | Added patch files in volume mount to fix the download voices |
 | [Piper Hub](https://github.com/hlappano/Piper-Hub)     | 1.1.1   | 8102  | None                    |
 | [Blockstream Blind Oracle](https://github.com/Blockstream/blind_pin_server) | 0.1.2-patch.1 | 3344, 8103-8105 | Pulled from UmbrelOS, just to host on a different port. |
+| [Simple Jade Pin Server](https://github.com/boltadvantage/SimpleJadePinServer) | 1.0.1 | 8107 | None |
 
 ## How to use:
 https://user-images.githubusercontent.com/10330103/197889452-e5cd7e96-3233-4a09-b475-94b754adc7a3.mp4
