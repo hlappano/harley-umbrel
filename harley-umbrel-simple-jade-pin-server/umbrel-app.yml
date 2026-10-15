@@ -21,8 +21,8 @@ dependencies: []
 repo: https://github.com/boltadvantage/SimpleJadePinServer
 support: https://github.com/boltadvantage/SimpleJadePinServer
 gallery:
-  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_1.jpg
-  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_2.jpg
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_1.png
+  - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_2.png
 releaseNotes: >-
   Testing... Release 1.0.1
 path: ""
