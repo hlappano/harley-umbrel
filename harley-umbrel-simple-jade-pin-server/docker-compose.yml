@@ -6,7 +6,7 @@ services:
       APP_PORT: 4443
       PROXY_AUTH_ADD: 'true'
   server:
-    image: hlappano/simple-jade-pin-server:v1.0.1
+    image: hlappano/simple-jade-pin-server:v1.0.1-patch1
     volumes:
       - ${APP_DATA_DIR}/data:/app/key_data
     ports:

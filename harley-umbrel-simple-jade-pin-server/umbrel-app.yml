@@ -4,7 +4,7 @@ name: Simple Jade Pin server
 tagline: Blockstream Jade Pin Server (from local developers)
 icon: https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/icon.png
 category: bitcoin
-version: "1.0.1"
+version: "v1.0.1-patch1"
 port: 8107
 description: >-
       A self-hosted blind PIN oracle for the Blockstream Jade, packaged as a desktop application that runs entirely offline.
@@ -25,6 +25,11 @@ gallery:
   - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_2.png
 releaseNotes: >-
   Testing... Release 1.0.1
+
+  Patch1 (hlappano fix):
+  - Fixed QR Code not showing up for step 2
+  - Fixed the camera decode out of sequence.
+    - Added skip duplicates and not in sequence codes.
 path: ""
 defaultUsername: ""
 defaultPassword: ""
