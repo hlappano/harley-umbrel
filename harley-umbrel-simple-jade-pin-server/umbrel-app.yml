@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: harley-umbrel-simple-jade-pin-server
-name: Simple Jade Pin server
+name: Simple Jade Pin Server
 tagline: Blockstream Jade Pin Server (from local developers)
 icon: https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/icon.png
 category: bitcoin
