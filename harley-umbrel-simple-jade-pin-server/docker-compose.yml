@@ -1,14 +1,70 @@
-version: "3.7"
 services:
   app_proxy:
     environment:
       APP_HOST: harley-umbrel-simple-jade-pin-server_server_1
-      APP_PORT: 4443
+      # Map to container web 5000
+      APP_PORT: 5000
       PROXY_AUTH_ADD: 'true'
   server:
-    image: hlappano/simple-jade-pin-server:v1.0.1-patch1
+    image: hlappano/simple-jade-pin-server:v2.0.0
+    environment:
+      # Proxy Port for backend server
+      PUBLIC_JADE_SERVER_PROXY_PORT: 18081
+      # Proxy Port for Web
+      PUBLIC_JADE_WEB_PROXY_PORT: 8107
+      # Proxy Host default umbrel, but probably should be overridden if other.
+      PUBLIC_JADE_PROXY_HOST: "umbrel"
+    working_dir: /app
     volumes:
       - ${APP_DATA_DIR}/data:/app/key_data
     ports:
-      - "18080:4443"
+      # Mapping 8107 to 5000 (web)
+      - "8107:5000"
     command: ["--no-tls", "--listen", "0.0.0.0", "--data-dir", "/app/key_data"]
+
+  # Creating a tls certificates for the nginx
+  cert-init:
+    image: alpine:3.20
+    restart: "no"
+    volumes:
+      - ${APP_DATA_DIR}/data/certs:/certs
+    command:
+      - sh
+      - -c
+      - |
+        apk add --no-cache openssl >/dev/null
+
+        GENERATE=false
+        if [ ! -f /certs/fullchain.pem ] || [ ! -f /certs/privkey.pem ]; then
+          GENERATE=true
+        elif ! openssl x509 -checkend 2592000 -noout -in /certs/fullchain.pem; then
+          echo "Certificate is expiring soon or invalid. Regenerating..."
+          GENERATE=true
+        fi
+
+        if [ "$GENERATE" = "true" ]; then
+          openssl req -x509 -nodes -newkey rsa:2048 -days 825 \
+            -keyout /certs/privkey.pem \
+            -out /certs/fullchain.pem \
+            -subj "/CN=umbrel.local" \
+            -addext "subjectAltName=DNS:umbrel.local,IP:127.0.0.1"
+          chmod 600 /certs/privkey.pem
+          chmod 644 /certs/fullchain.pem
+        fi
+  # Nginx for the backend server, keep it protected
+  backend-tls:
+    image: nginx:alpine
+    restart: unless-stopped
+    depends_on:
+      cert-init:
+        condition: service_completed_successfully
+      server:
+        condition: service_started
+    ports:
+      - "18081:443"
+    volumes:
+      - ${APP_DATA_DIR}/data/certs:/etc/nginx/certs:ro
+      - ${APP_DATA_DIR}/data/nginx/conf.d:/etc/nginx/conf.d:ro
+
+volumes:
+  backend_certs:

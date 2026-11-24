@@ -4,7 +4,7 @@ name: Simple Jade Pin server
 tagline: Blockstream Jade Pin Server (from local developers)
 icon: https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/icon.png
 category: bitcoin
-version: "v1.0.1-patch1"
+version: "v2.0.0"
 port: 8107
 description: >-
       A self-hosted blind PIN oracle for the Blockstream Jade, packaged as a desktop application that runs entirely offline.
@@ -15,18 +15,21 @@ description: >-
 
 
       Forked from SimpleJadePinServer by Filiprogrammer. The blind-oracle protocol implementation remains substantially theirs; this fork adds desktop packaging, offline hardening, camera fixes and key-management tooling. Not affiliated with or endorsed by Blockstream.
-developer: Filiprogrammer and boltadvantage
-website: https://github.com/boltadvantage/SimpleJadePinServer
+developer: HLappano
+website: https://github.com/hlappano/SimpleJadePinServer
 dependencies: []
-repo: https://github.com/boltadvantage/SimpleJadePinServer
-support: https://github.com/boltadvantage/SimpleJadePinServer
+repo: https://github.com/hlappano/SimpleJadePinServer
+support: https://github.com/hlappano/SimpleJadePinServer
 gallery:
   - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_1.png
   - https://raw.githubusercontent.com/hlappano/harley-umbrel/master/images/simple-jade-pin-server/image_2.png
 releaseNotes: >-
-  Testing... Release 1.0.1
+  Release 2.0.0
 
-  Patch1 (hlappano fix):
+  - HLappano's Release of SimpleJadePinServer
+  - Svelte Frontend
+  - Gevent Flask Backend
+  - Camera auto zoom and auto focus for supported devices.
   - Fixed QR Code not showing up for step 2
   - Fixed the camera decode out of sequence.
     - Added skip duplicates and not in sequence codes.
