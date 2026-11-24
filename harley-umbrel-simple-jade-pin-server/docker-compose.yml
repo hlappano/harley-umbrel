@@ -37,7 +37,7 @@ services:
         GENERATE=false
         if [ ! -f /certs/fullchain.pem ] || [ ! -f /certs/privkey.pem ]; then
           GENERATE=true
-        elif ! openssl x509 -checkend 2592000 -noout -in /certs/fullchain.pem; then
+        elif ! openssl x509 -checkend 2592000 -noout -in /certs/fullchain.pem >/dev/null 2>&1; then
           echo "Certificate is expiring soon or invalid. Regenerating..."
           GENERATE=true
         fi
