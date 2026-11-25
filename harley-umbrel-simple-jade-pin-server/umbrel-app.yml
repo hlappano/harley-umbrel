@@ -11,7 +11,7 @@ description: >-
       Supports QR PIN Unlock, which makes it possible to use a Jade in a fully air-gapped way — no USB, no Bluetooth, no network.
       USB and Bluetooth unlock via Blockstream Green are equally supported, including configuring the oracle over a USB cable when a camera is not an option.
 
-      NOTE: The camera media only works via https or a localhost. So a tunnel needs to be setup from camera device to umbrelos server.
+      NOTE: The camera media only works via https or a localhost. So if not on UmbrelOS 2.0, a tunnel might be needed to be setup from camera device to umbrelos server.
 
 
       Forked from SimpleJadePinServer by Filiprogrammer. The blind-oracle protocol implementation remains substantially theirs; this fork adds desktop packaging, offline hardening, camera fixes and key-management tooling. Not affiliated with or endorsed by Blockstream.

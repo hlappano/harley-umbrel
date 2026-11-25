@@ -33,16 +33,7 @@ services:
       - -c
       - |
         apk add --no-cache openssl >/dev/null
-
-        GENERATE=false
-        if [ ! -f /certs/fullchain.pem ] || [ ! -f /certs/privkey.pem ]; then
-          GENERATE=true
-        elif ! openssl x509 -checkend 2592000 -noout -in /certs/fullchain.pem >/dev/null 2>&1; then
-          echo "Certificate is expiring soon or invalid. Regenerating..."
-          GENERATE=true
-        fi
-
-        if [ "$GENERATE" = "true" ]; then
+        if [ ! -f /certs/fullchain.pem ] || [ ! -f /certs/privkey.pem ] || ! openssl x509 -checkend 2592000 -noout -in /certs/fullchain.pem >/dev/null 2>&1; then
           openssl req -x509 -nodes -newkey rsa:2048 -days 825 \
             -keyout /certs/privkey.pem \
             -out /certs/fullchain.pem \
@@ -50,7 +41,11 @@ services:
             -addext "subjectAltName=DNS:umbrel.local,IP:127.0.0.1"
           chmod 600 /certs/privkey.pem
           chmod 644 /certs/fullchain.pem
+          echo "Certificates have been generated."
+        else
+          echo "Certificates do not need to be generated."
         fi
+
   # Nginx for the backend server, keep it protected
   backend-tls:
     image: nginx:alpine
